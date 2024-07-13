@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project {
+            background-color: #e0f7fa;
+            border: 1px solid #b2ebf2;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人网页</h1>
+</header>
+
+<section>
+    <h2>个人简介</h2>
+    <p>你好，我是一名热爱技术与创新的个人，致力于不断学习和探索新知识。我的兴趣爱好广泛，包括金融、摄影和美的事物。</p>
+</section>
+
+<section>
+    <h2>项目作品</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>项目一</h3>
+            <p>这是我参与的第一个项目，主要涉及Web开发和设计。</p>
+        </div>
+        <div class="project">
+            <h3>项目二</h3>
+            <p>这是我参与的第二个项目，主要涉及数据分析和可视化。</p>
+        </div>
+        <div class="project">
+            <h3>项目三</h3>
+            <p>这是我参与的第三个项目，主要涉及移动应用开发。</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>联系方式</h2>
+    <p>邮箱：374773391@qq.com</p>
+    <p>电话：123-456-7890</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 个人网页. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
